@@ -6,7 +6,6 @@
 body{
     background-color: rgb(14, 14, 14);
     /* min-height: 100vh; */
-    /* overflow: hidden; */
 }
 :root{
     --normal-text-size: 15px;
@@ -26,10 +25,8 @@ nav ul{
     align-items: center;
     position: fixed;
     width: 100%; 
-
     box-shadow: 2px 2px 2px 2px rgb(39, 39, 39);    
     list-style-type: none;
-    /* padding: 5px; */
 }
 nav ul li{
     padding: 10px;
@@ -42,7 +39,8 @@ nav ul a,li{
 nav ul li:first-child{
     margin-right: auto;
     font-size: 20px;
-    color: red;
+    color: skyblue;
+    font-weight: bold;
 }
 
 nav ul li a:hover{
@@ -58,7 +56,6 @@ nav ul li a:active{
 /* ........... */
 .menu-symbol, .close-symbol{
     cursor: pointer;
-
     display: none;
 }
 
@@ -68,15 +65,11 @@ nav ul li a:active{
     right: 0;
     width: 200px;
     color: var(--normal-text-color);
-    /* border: 2px solid red; */
     
     margin-top: 2px;
     flex-direction: column;
     z-index: 100;
-    /* display: none; */
-    /* background:ed; */
     background: transparent;
-    /* backdrop-filter: 3; */
     backdrop-filter: blur(10px);
     justify-content: flex-start;
     align-items: flex-start;
@@ -87,10 +80,8 @@ nav ul li a:active{
 
 /* -----------------------------------home page--------------------------- */
 
-
 .container{
     margin: var(--left-right-margin);
-    /* align-items: center; */
 }
 .home-page{
     color: var(--normal-text-color);
@@ -98,17 +89,12 @@ nav ul li a:active{
 
     display: flex;
     align-items: center;
-    /* gap: 30px; */
     justify-content: space-between;
     max-width: 100%;
-    /* border: var(--border-layout); */
-  
-    /* flex-wrap: wrap; */
     min-height: 100vh;
 }
 .home-page-bio{
     width: 60%;
-    /* border: var(--border-layout); */
 }
 .home-page-bio h2, h1{
     display: inline;
@@ -123,7 +109,6 @@ nav ul li a:active{
 
 .social-icons{
     margin-top: 20px;
-    /* border:1px solid red; */
 }
 .social-icons a{
     color: #4d4b4b;
@@ -162,12 +147,11 @@ nav ul li a:active{
 }
 
 .profile-photo{
-    background-image: url("./media/kalki.jpg");
-    border: 1px solid skyblue;
-    width: 300px;
-    height: 300px;
-    border-radius: 300px;
-    background-size: cover;
+    background-image: url("./media/profile1.jpg");
+    width: 270px;
+    height: 270px ;
+    border-radius: 50%;
+    background-size: cover; 
     cursor: pointer;
     animation: animate 1s infinite alternate;
 }
@@ -183,16 +167,12 @@ nav ul li a:active{
 /* -------------------------------about----------------------- */
 .about-container{
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     gap: 100px;
     margin: var(--left-right-margin);
     padding-top: 50px;
-    /* border: var(--border-layout); */
 }
 .about-left{
     margin: 0px;
-    /* border: var(--border-layout); */
 }
 .about-photo{
     margin-top: 0px;
@@ -209,13 +189,11 @@ nav ul li a:active{
 .about-photo:hover{
     box-shadow: 2px 2px 2px 2px rgb(79, 79, 79), 2px 2px  skyblue ;
     transform: translateX(5px);
-    /* border: var(--border-layout); */
     cursor: pointer;
 }
 .about-content{
     text-align: justify;
     color: var(--normal-text-color);
-    /* border: var(--border); */
     width: fit-content;
     flex-wrap: wrap;
 }
@@ -226,14 +204,12 @@ nav ul li a:active{
 
 .about-catagories-list button{
    margin-right: 30px;
-   /* background: rgba(50, 145, 169, 0.4); */
    background: skyblue;
    color: black;
    border-radius: 5px;
    cursor: pointer;
    font-size: 15px;
    border: none;
-   /* color: white; */
    padding: 5px;
 
 }
@@ -256,8 +232,6 @@ nav ul li a:active{
 
 /* ----------------------------skills-------------------- */
 .skills-page{
-    /* border: var(--border-layout); */
-    /* margin-top: 100px; */
     padding-top: 50px;
 }
 .main-title{
@@ -271,7 +245,6 @@ nav ul li a:active{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: var(--border-layout); */
     column-gap: 40px;
     padding: 40px;
     flex-wrap: wrap;
@@ -279,7 +252,6 @@ nav ul li a:active{
 
 .skill-block:hover{
     transform: translateY(-10px);
-    /* transition: 1s; */
     cursor: pointer;
     opacity: 0.5;
 }
@@ -317,17 +289,12 @@ nav ul li a:active{
     padding-top: 50px;
 }
 .experience-page{
-    /* border: var(--border-layout); */
     padding: 0px 100px;
-    /* display: flex; */
-    /* overflow: hidden; */
 }
 
 .experience-block{
-    /* border: var(--border-layout); */
     display: flex;
     gap: 50px;
-    /* padding: 20px 100px; */
     color: var(--normal-text-color);
     justify-content: space-between;
     margin-bottom: 50px;
@@ -336,31 +303,24 @@ nav ul li a:active{
  
 .duration{
     opacity: 0.8;
-    /* border: var(--border-layout); */
 }
 .experience-content
 {
     text-align: justify;
-    /* border: var(--border-layout); */
-
+   
     width: 90%;
 }
 
 .content-matter{
-    /* width: 100%; */
-    /* border: var(--border-layout); */
     margin-top: 10px;
     text-align: justify;
     margin-left: 15px;
     
 }
 .content-skills{
-    margin-top: 15px;
+    margin-top: 10px;
     /* flex-wrap: wrap; */
 }
-
-
-
 .content-skills .span{
     cursor: pointer;
     color: violet;
@@ -379,20 +339,9 @@ nav ul li a:active{
     padding: 50px 100px;
 }
 
-.projects-block{
-    display: flex;
-    gap: 50px;
-    /* flex-wrap: wrap; */
-    height: fit-content;
-    /* margin-top: 20px; */
-    /* padding: 20px; */
-    /* border: var(--border-layout); */
-    margin-bottom: 50px;
-    justify-content: space-between;
-}
+
 .projects-image{
     background-size: cover;
-    /* margin: 0px 150px; */
     background-position: center;
     width: 150px;
     height: 150px;
@@ -412,7 +361,6 @@ nav ul li a:active{
 .projects-content{
     width: 90%;
     text-align: justify;
-    /* border: var(--border-layout); */
     color: var(--normal-text-color);
     width: 100%;
 }
@@ -431,32 +379,19 @@ nav ul li a:active{
 }
 
 /* ---------------------------------contact----------- */
-.copyrights{
-    background-color: #262626   ;
-    height: 50px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--normal-text-color);
-}
+
 .contact-container{
     margin-top: 50px;
-    /* border: 1px solid red; */
     height: 90vh;
     color: var(--normal-text-color);
 }
 .contact-area{
     display: flex; 
-    /* margin:  0px 150px; */
     margin-top: 50px;
-    /* border: var(--border-layout); */
 }
 .contact-left{
     width: 40%;
-    /* padding: 0px 100px; */
     height: fit-content;
-
-    /* border: var(--border-layout); */
 }
 .contact-left h2{
     margin-bottom: 10px; 
@@ -474,12 +409,11 @@ nav ul li a:active{
     font-size: 15px;
     margin-bottom: 10px;
     color: #d2c2c2;
-    /* border: var(--border-layout); */
 }
 
 
 /* contactright */
-.user-name, .user-mail, textarea{
+input{
     padding: 10px;
     background: #262626;
     width: 94%;
@@ -507,11 +441,21 @@ a{
 .logo-linkedin{background-image: url("./media/linkedin.avif");}
 .logo-naukri{background-image: url("./media/naukri.png");}
 .logo-leetcode{background-image: url("./media/leetcode.png");}
-.logo-github{background-image: url("./media/gith_hub_logo.png");}
+.logo-github{background-image: url("./media/githhub.webp");}
 
 .msg-bottom{
     color: lightgreen;
     margin-top: 20px;
     align-items: center;
     
+}
+.copyrights{
+    background-color: #262626   ;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    color: var(--normal-text-color);
 }

@@ -40,10 +40,6 @@ return <>
             <li onClick={()=>setmenuSybol(false)}><a href="#5">Projects</a></li>
             <li onClick={()=>setmenuSybol(false)}><a href="#6">Contact</a></li>
         </ul></>}
-        
-        
-
-
     </nav>
     <HomePage/>
     <AboutPage/>

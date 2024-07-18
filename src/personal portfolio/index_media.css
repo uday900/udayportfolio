@@ -1,4 +1,4 @@
-@media (max-width:600px) {
+@media (max-width:700px) {
     .menu-symbol, .close-symbol{
         display: block;
     }
@@ -39,8 +39,11 @@
         width: 250px;
         height: 250px;
         margin-top: 20px;
+        
+        
     }
     .home-page-bio{
+        /* margin-bottom: -20px; */
         /* padding: 15px; */
         overflow: hidden;
         min-width: 100%;
@@ -105,6 +108,9 @@
         gap: 20px;
         
     }
+    .projects-image{
+        margin-bottom: 20px;
+    }
     /* ------------contact---------------- */
     .contact-area{
         flex-direction: column;
@@ -120,6 +126,9 @@
     }
     .also-see-my-profiles{
         margin: 0;
+    }
+    .copyrights{
+        margin-top: 100px;
     }
     
 

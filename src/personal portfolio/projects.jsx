@@ -5,7 +5,7 @@ function ProjectsPage(){
     <div id = "5" className="projects-container container">
         <div className="main-title">Projects</div>
 
-        <div className="projects-block">
+        <div className="experience-block">
 
             <div className="projects-image ems"></div>
             <div className="projects-content">
@@ -30,7 +30,7 @@ function ProjectsPage(){
         </div>
         </div>
 
-        <div className="projects-block">
+        <div className="experience-block">
             <div className="projects-image btc"></div>
             <div className="projects-content">
                 <h3>Brain Tumor Classification</h3>
@@ -50,7 +50,7 @@ function ProjectsPage(){
         </div>
         </div>
 
-        <div className="projects-block">
+        <div className="experience-block">
             <div className="projects-image todolists"></div>
             <div className="projects-content">
                 <h3>ToDo App</h3>
@@ -79,7 +79,7 @@ function ProjectsPage(){
                 </div>
         </div>
         </div>
-        <div className="projects-block">
+        <div className="experience-block">
             <div className="projects-image cc"></div>
             <div className="projects-content">
                 <h3>Currency Converter</h3>
@@ -95,7 +95,7 @@ function ProjectsPage(){
                 </div>
         </div>
         </div>
-        <div className="projects-block">
+        <div className="experience-block">
             <div className="projects-image caluclator"></div>
             <div className="projects-content">
                 <h2>Caluclator</h2>

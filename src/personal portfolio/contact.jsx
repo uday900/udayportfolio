@@ -8,16 +8,31 @@ const ContactPage = () => {
       const [message, setMessage] = useState('');
       const [showmsg, setShowmsg] = useState(true)
 
-      const handleClick = () => {
+      const handleClick = (e) => {
+        
         SetUser_email("")
         SetUser_name("")
         SetUser_msg("")
         setMessage("message sent succesfully")
         setShowmsg(true);
-
         setTimeout(() => {
           setShowmsg(false);
         }, 2000);
+        const formEle = document.querySelector("form")
+        
+      
+
+        const formData = new FormData(formEle)
+        fetch("https://script.google.com/macros/s/AKfycby4EFd4oQx1LU-BP4cRbe7LL4k8uTAYWiPOeqxAerTpJFHTG_2Qmq3-RFrX71BspsCf4w/exec",
+            {
+                method: "POST",
+                body: formData,
+            }
+        )
+        e.preventDefault()
+        
+
+
       };
     return (
         <>
@@ -70,34 +85,36 @@ const ContactPage = () => {
                     </div>
                     
                     <div className="contact-right">
-                        <form action="">
+                        <form className="form" onSubmit={(e)=>handleClick(e)}>
                             <input type="text" 
-                                name="user_name"
+                                name="Name"
                                 placeholder="enter your name"
                                 value={user_name} 
                                 onChange={(e)=>SetUser_name(e.target.value)}
-                                className="user-name" required/>
+                                 required/>
                             <input type="email" 
                                 placeholder="enter your email" 
-                                 className="user-mail" 
-                                 name="user_email"
+                                 name="Email"
                                 value={user_email} 
                                 onChange={(e)=>SetUser_email(e.target.value)}
                             />
-                            <textarea className="user-message" placeholder="enter you message"
-                                value={user_msg} 
-                                name="user_msg"
-                                onChange={(e)=>SetUser_msg(e.target.value)}
-                            required></textarea>
-                            <input type="button" value="Send Message" 
-                                className="downloadcv"
-                            onClick={handleClick} />
+                            
+                            <input type="text" name="Message" placeholder="enter message"
+                             value={user_msg} 
+                             onChange={(e)=>SetUser_msg(e.target.value)}
+                             
+                             />
+                            <input type="submit" value="Send Message" className="downloadcv"
+                                 />
                         </form>
                         {showmsg && <p className="msg-bottom">{message}</p>}
                     </div>
                 </div>
-
+                
+                
             </div>
+            
+
             
         </>
     );
