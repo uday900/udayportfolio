@@ -22,9 +22,10 @@ function HomePage(){
                     <a href="https://www.instagram.com/yourinstagramprofile" target="_blank"><i className="fa-brands fa-instagram"></i></a>
                     <a href="https://www.youtube.com/yourchannel" target="_blank"><i className="fa-brands fa-youtube"></i></a>
                 </div>
-                <button className="downloadcv">
-                    <a href="./media/resume.pdf">Download CV</a>
+                <a href="/media/resume.pdf" download>
+                    <button className="downloadcv">Download CV
                 </button>
+                </a>
                 
             </div>
         </div>
