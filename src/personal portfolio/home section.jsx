@@ -22,7 +22,7 @@ function HomePage(){
                     <a href="https://www.instagram.com/yourinstagramprofile" target="_blank"><i className="fa-brands fa-instagram"></i></a>
                     <a href="https://www.youtube.com/yourchannel" target="_blank"><i className="fa-brands fa-youtube"></i></a>
                 </div>
-                <a href="/Darla Udaya Kiran resume5.pdf" download className="downloadcv">
+                <a href="./resume1.pdf" download className="downloadcv">
                  Download CV</a>
                 
             </div>
