@@ -47,9 +47,7 @@ return <>
     <ExperiencePage/>
     <ProjectsPage/>
     <ContactPage/>
-    <div className="copyrights">
-                <p>	&#169; copyrights portfolio Darla uday kiran 2024</p>
-    </div>
+    
 
 </>
 }

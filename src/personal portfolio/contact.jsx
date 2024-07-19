@@ -36,6 +36,9 @@ const ContactPage = () => {
       };
     return (
         <>
+        <div className="contact-page">
+
+        
             <div className="contact-container container" id="6">
                 <div className="main-title">Get in Touch</div>
 
@@ -73,13 +76,17 @@ const ContactPage = () => {
                 <div className="contact-area">
                     <div className="contact-left">
                         <h2>Contact me</h2>
-                        <div className="email-info">
+                        <div className="-info">
                             <i className="fa-solid fa-envelope"></i>
                             <span className="information">udaykirandarla2002@gmail.com</span>
                         </div>
-                        <div className="contact-info">
+                        <div className="-info">
                             <i className="fa-solid fa-phone"></i>
                             <span className="information">+91 6301436515</span>
+                        </div>
+                        <div className="-info">
+                            <span className="information">2-28, Paluru <br /> Kandukuru Mandal <br /> Prakasam <br />Andhra Pradesh - 523105
+                            </span>
                         </div>
 
                     </div>
@@ -112,7 +119,12 @@ const ContactPage = () => {
                 </div>
                 
                 
+                
             </div>
+            <div className="copyrights">
+                    <p>	&#169; copyrights portfolio Darla uday kiran 2024</p>
+            </div>
+        </div>
             
 
             

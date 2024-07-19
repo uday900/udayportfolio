@@ -24,12 +24,8 @@
     }
     .home-page{
         margin-top: 40px;
-        /* display: flex;    */
         flex-direction: column-reverse;
-        /* border: 1px solid skyblue; */
-        /* justify-content: flex-end; */
         align-items: center; 
-        /* height: auto; */
         min-height: 90vh;
         gap: 0px;
         max-width: 100%;
@@ -43,8 +39,6 @@
         
     }
     .home-page-bio{
-        /* margin-bottom: -20px; */
-        /* padding: 15px; */
         overflow: hidden;
         min-width: 100%;
     }
@@ -78,13 +72,9 @@
     .about-catagories-list button{
         margin-top: 5px;
     }
-    :root{
-        --border: 1px solid skyblue;
-    }
     /* ------------experience---------- */
     .experience-page{
         padding: 0px;
-        /* border: var(--border); */
     }
     .experience-block{
         flex-direction: column;
@@ -103,7 +93,6 @@
     /* ----------projects------------------- */
     .projects-block{
         flex-direction: column;
-        /* border: var(--border)   ; */
         max-width: 100%;
         gap: 20px;
         
@@ -115,11 +104,7 @@
     .contact-area{
         flex-direction: column;
         height: fit-content;
-        /* border: var(--border); */
         gap: 20px;
-        /* align-items: center; */
-        /* width: 100%; */
-        /* justify-content: first baseline; */
     }
     .contact-left{
         width: fit-content;
@@ -127,12 +112,7 @@
     .also-see-my-profiles{
         margin: 0;
     }
-    .copyrights{
-        margin-top: 100px;
+    .contact-page{
+        gap: 200px;
     }
-    
-
-
-
-    
 }

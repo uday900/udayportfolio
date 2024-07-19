@@ -181,13 +181,11 @@ nav ul li a:active{
     background-size: cover;
     border-radius: 20px;
     background-position: center;
-
-    transform: translateX(0px);
     transition: 1.1s all;
 }
 .about-photo:hover{
-    box-shadow: 2px 2px 2px 2px rgb(79, 79, 79), 2px 2px  skyblue ;
-    transform: translateX(5px);
+    box-shadow: 2px 2px 2px 2px rgba(79, 79, 79, 0), 2px 2px  skyblue ;
+    transform: scale(1.1);
     cursor: pointer;
 }
 .about-content{
@@ -395,16 +393,15 @@ nav ul li a:active{
 .contact-left h2{
     margin-bottom: 10px; 
 }
-.email-icon, .call-icon{
-    display: inline;
-    font-size: 15px;
-}
-.contact-info
+
+.-info
 {
     margin-top: 5px;
 }
+.-info i{
+    margin-right: 10px;
+}
 .information{
-    margin-left: 10px;
     font-size: 15px;
     margin-bottom: 10px;
     color: #d2c2c2;
@@ -454,7 +451,9 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    
     color: var(--normal-text-color);
+}
+.contact-page{
+    display: flex;
+    flex-direction: column;
 }
