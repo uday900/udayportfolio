@@ -5,6 +5,9 @@
     .close-symbol{
         align-items: center;
     }
+    .close-btn{
+        color: red;
+    }
     nav .hide-on-mobile{
         display: none;
     }
@@ -27,7 +30,6 @@
         flex-direction: column-reverse;
         align-items: center; 
         min-height: 90vh;
-        gap: 0px;
         max-width: 100%;
 
     }
@@ -47,9 +49,9 @@
         justify-content: center;
         align-items: center;
     }
-    .downloadcv{
-        width: 40%;
-    }
+    /* .downloadcv{
+        width: fit-content;
+    } */
     .skill-block{
         /* border: var(--border-layout); */
         margin-bottom: 10px;
