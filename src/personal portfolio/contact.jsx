@@ -33,34 +33,27 @@ const ContactPage = () => {
         <>
             <div className="contact-page" id = "6">
                 <div className="contact-container container">
+                <motion.div
+        whileInView={{opacity: 1, y: 0}}
+        initial = {{opacity: 0, y: -100}}
+        transition={{duration:0.9}}
+        className="main-title">Get in Touch</motion.div>
 
-                    <motion.div
-                    // <div
-                        whileInView={{ opacity: 1, y: 0 }}
-                        initial={{ opacity: 0, y: -100 }}
-                        transition={{ duration: 0.9 }}
+                    {/* <div
+                        
                         className="main-title"
                     >
                         Get in Touch
-                    </motion.div>
-                    {/* </div> */}
+                    </div> */}
 
-                    {/* <motion.h3 */}
-                    <div
-                        whileInView={{ opacity: 1, x: 0 }}
-                        initial={{ x: -100, opacity: 0 }}
-                        transition={{ duration: 1 }}
+                    <h3
                         className="also-see-my-profiles"
                     >
                         Also see my profiles in...
-                    </div>
-                    {/* </motion.h3> */}
+                    </h3>
                     
-                    {/* <motion.div */}
                     <div
-                        whileInView={{ opacity: 1, x: 0 }}
-                        initial={{ x: -100, opacity: 0 }}
-                        transition={{ duration: 1 }}
+                        
                         className="other-profile-links skill-container"
                     >
                         <a href="https://www.linkedin.com/in/darla-uday-kiran-18a450239" target="_blank">
@@ -90,15 +83,11 @@ const ContactPage = () => {
                                 <div className="skill-title">Naukri</div>
                             </div>
                         </a>
-                    {/* </motion.div> */}
                     </div>
 
                     <div className="contact-area">
-                        {/* <motion.div */}
                         <div
-                            whileInView={{ opacity: 1, x: 0 }}
-                            initial={{ x: -100, opacity: 0 }}
-                            transition={{ duration: 1 }}
+                            
                             className="contact-left"
                         >
                             <h2>Contact me</h2>
@@ -113,14 +102,10 @@ const ContactPage = () => {
                             <div className="-info">
                                 <span className="information">2-28, Paluru <br /> Kandukuru Mandal <br /> Prakasam <br /> Andhra Pradesh - 523105</span>
                             </div>
-                        {/* </motion.div> */}
                         </div>
                         
-                        {/* <motion.div */}
                         <div 
-                            whileInView={{ opacity: 1, x: 0 }}
-                            initial={{ x: 100, opacity: 0 }}
-                            transition={{ duration: 1 }}
+                           
                             className="contact-right"
                         >
                             <form className="form" onSubmit={(e) => handleClick(e)}>
@@ -151,7 +136,6 @@ const ContactPage = () => {
                                 <input type="submit" value="Send Message" className="downloadcv" />
                             </form>
                             {showmsg && <p className="msg-bottom">{message}</p>}
-                        {/* </motion.div> */}
                         </div>
                     </div>
                 </div>

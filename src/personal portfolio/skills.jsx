@@ -5,14 +5,12 @@ import {motion} from "framer-motion"
 const SkillsPage = () => {
   return <>
   <div className="container skills-page" id='3'>
-       
-
         <motion.div
         whileInView={{opacity: 1, y: 0}}
         initial = {{opacity: 0, y: -100}}
         transition={{duration:0.9}}
         className="main-title">Technologies</motion.div>
-        <motion.div
+        <div
         whileInView={{opacity: 1, x: 0}}
         initial = {{opacity: 0, x: -100}}
         transition={{duration:0.9}}
@@ -79,7 +77,7 @@ const SkillsPage = () => {
                     Excel
             </div>
         </div>
-        </motion.div>
+        </div>
         
         
   

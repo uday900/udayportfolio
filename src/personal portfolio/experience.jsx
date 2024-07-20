@@ -4,36 +4,27 @@ function ExperiencePage() {
     return (
         <>
             <div className="experience-container container" id="4">
-
-                {/* <motion.div
-                    whileInView={{ opacity: 1, y: 0 }}
-                    initial={{ opacity: 0, y: -100 }}
-                    transition={{ duration: 0.9 }} */}
-                <div 
+            <motion.div
+        whileInView={{opacity: 1, y: 0}}
+        initial = {{opacity: 0, y: -100}}
+        transition={{duration:0.9}}
+        className="main-title">Experience</motion.div>
+                {/* <div 
                     className="main-title"
                 >
                     Experience
-                {/* </motion.div> */}
-                </div>
+                </div> */}
 
                 <div className="experience-page">
 
                     <div className="experience-block">
-                        {/* <motion.div
-                            whileInView={{ opacity: 1, x: 0 }}
-                            initial={{ x: -100, opacity: 0 }}
-                            transition={{ duration: 1 }} */}
+                        
                         <div 
                             className="duration"
                         >
                             Apr 2022 to Jun 2022
-                        {/* </motion.div> */}
                         </div>
 
-                        {/* <motion.div
-                            whileInView={{ opacity: 1, x: 0 }}
-                            initial={{ x: 100, opacity: 0 }}
-                            transition={{ duration: 1 }} */}
                         <div
                             className="experience-content"
                         >
@@ -50,26 +41,16 @@ function ExperiencePage() {
                                 <div className="span">Machine Learning</div>
                                 <div className="span">Numpy</div>
                             </div>
-                        {/* </motion.div> */}
                         </div>
                     </div>
 
                     <div className="experience-block">
-                        {/* <motion.div
-                            whileInView={{ opacity: 1, x: 0 }}
-                            initial={{ x: -100, opacity: 0 }}
-                            transition={{ duration: 1 }} */}
+                        
                         <div 
                             className="duration"
                         >
                             Apr 2022 to Jun 2022
-                        {/* </motion.div> */}
                         </div>
-
-                        {/* <motion.div
-                            whileInView={{ opacity: 1, x: 0 }}
-                            initial={{ x: 100, opacity: 0 }}
-                            transition={{ duration: 1 }} */}
                         <div 
                             className="experience-content"
                         >
@@ -87,7 +68,6 @@ function ExperiencePage() {
                                 <div className="span">JavaScript</div>
                                 <div className="span">React.js</div>
                             </div>
-                        {/* </motion.div> */}
                         </div>
                     </div>
                 </div>

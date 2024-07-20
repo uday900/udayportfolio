@@ -13,23 +13,14 @@ const AboutPage = () => {
         <>
             <div className="container about-container" id="2">
 
-                <motion.div
-                    whileInView={{ opacity: 1, x: 0 }}
-                    initial={{ opacity: 0, x: -100 }}
-                    transition={{ duration: 0.5 }}
-                // <div 
+                <div 
                     className="about-left"
                 >
                     <div className="about-photo"></div>
-                </motion.div>
-                {/* </div> */}
+                </div>
 
-                <motion.div
-                    whileInView={{ opacity: 1, x: 0 }}
-                    initial={{ opacity: 0, x: 100 }}
-                    transition={{ duration: 0.5 }}
                 
-                 /* <div  */
+                 <div
                     className="about-content"
                 >
                     <h2>About me</h2>
@@ -49,8 +40,7 @@ const AboutPage = () => {
                         {active == "Strengths" && <Strengths />}
                         {active == "Others" && <Others />}
                     </div>
-                </motion.div>
-                {/* </div> */}
+                </div> 
             </div>
         </>
     );

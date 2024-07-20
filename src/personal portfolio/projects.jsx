@@ -4,27 +4,20 @@ function ProjectsPage(){
 
     return <>
     <div id = "5" className="projects-container container">
-        <motion.div
-            whileInView={{opacity: 1, y: 0}}
-            initial = {{opacity: 0, y: -100}}
-            transition={{duration:0.9}}
-        //<div 
+    <motion.div
+        whileInView={{opacity: 1, y: 0}}
+        initial = {{opacity: 0, y: -100}}
+        transition={{duration:0.9}}
+        className="main-title">Projects</motion.div>
+        {/* <div 
             className="main-title">Projects
-        </motion.div>
-        {/* </div> */}
+        </div> */}
 
         <div className="experience-block">
-                <motion.div
-                whileInView = {{opacity:1, x: 0}}
-                initial = {{x:-100, opacity:0}}
-                transition = {{duration: 1}}
+                <div
                 className="projects-image ems">
-                </motion.div>
+                </div>
             <div 
-            // <motion.div
-            // whileInView = {{opacity:1, x: 0}}
-            // initial = {{x:100, opacity:0}}
-            // transition = {{duration: 1}}
             className="projects-content">
                 <h3>Employee Management System</h3>
                 <div className="content-matter">
@@ -44,22 +37,15 @@ function ProjectsPage(){
                     <div class="span">MySql</div>
 
                 </div>
-        {/* </motion.div> */}
         </div>
         </div>
 
         <div className="experience-block">
-        <motion.div
-                whileInView = {{opacity:1, x: 0}}
-                initial = {{x:-100, opacity:0}}
-                transition = {{duration: 1}}
-                className="projects-image btc"></motion.div>            
+        <div
+                className="projects-image btc"></div>            
                 
-                {/* <motion.div */}
                 <div 
-            // whileInView = {{opacity:1, x: 0}}
-            // initial = {{x:100, opacity:0}}
-            // transition = {{duration: 1}}
+           
             className="projects-content">
                 <h3>Brain Tumor Classification</h3>
                 <div className="content-matter">
@@ -75,22 +61,18 @@ function ProjectsPage(){
                 <div class="span">Machine Learning</div>
    
                 </div>
-        {/* </motion.div> */}
         </div>
         </div>
 
         <div className="experience-block">
-        <motion.div
+        <div
                 whileInView = {{opacity:1, x: 0}}
                 initial = {{x:-100, opacity:0}}
                 transition = {{duration: 1}}
-                className="projects-image todolists"></motion.div>
+                className="projects-image todolists"></div>
          
-         {/* <motion.div */}
          <div 
-            // whileInView = {{opacity:1, x: 0}}
-            // initial = {{x:100, opacity:0}}
-            // transition = {{duration: 1}}
+          
             className="projects-content">
                 <h3>ToDo App</h3>
                 <div className="content-matter">
@@ -116,21 +98,18 @@ function ProjectsPage(){
                 <div className="project-link">
                     project link <a target="_blank" href="https://maketodolists-udaykiran.netlify.app/"><i class="fa-solid fa-link"></i> </a>
                 </div>
-        {/* </motion.div> */}
         </div >
         </div>
         <div className="experience-block">
-        <motion.div
+        <div
                 whileInView = {{opacity:1, x: 0}}
                 initial = {{x:-100, opacity:0}}
                 transition = {{duration: 1}}
-                className="projects-image cc"></motion.div>
+                className="projects-image cc"></div>
             
-            {/* <motion.div */}
+           
             <div 
-            // whileInView = {{opacity:1, x: 0}}
-            // initial = {{x:100, opacity:0}}
-            // transition = {{duration: 1}}
+           
             className="projects-content">
                 <h3>Currency Converter</h3>
                 <div className="content-matter content-matter-para">
@@ -143,21 +122,17 @@ function ProjectsPage(){
                     <div class="span">API Integration</div>
 
                 </div>
-        {/* </motion.div> */}
         </div>
         </div>
         <div className="experience-block">
-        <motion.div
+        <div
                 whileInView = {{opacity:1, x: 0}}
                 initial = {{x:-100, opacity:0}}
                 transition = {{duration: 1}}
-                className="projects-image caluclator"></motion.div>
+                className="projects-image caluclator"></div>
             
-            {/* <motion.div */}
             <div 
-            // whileInView = {{opacity:1, x: 0}}
-            // initial = {{x:100, opacity:0}}
-            // transition = {{duration: 1}}
+           
             className="projects-content">
                 <h2>Caluclator</h2>
                 <div className="content-matter content-matter-para">
@@ -174,7 +149,6 @@ function ProjectsPage(){
 
 
                 </div>
-        {/* </motion.div> */}
         </div>
         </div>
 
