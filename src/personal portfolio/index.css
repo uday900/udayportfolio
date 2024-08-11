@@ -355,7 +355,7 @@ nav ul li a:active{
     box-shadow: 2px 2px 2px 2px rgb(39, 39, 39);
 }
 .ems{background-image: url("./media/employee_management_system.png");}
-.caluclator{background-image: url("./media/cal.png");}
+/* .calucl{background-image: url("./media/cal.png");} */
 .todolists{background-image: url("./media/todolists.png");}
 .btc{background-image: url("./media/brain_tumor_classification.png");}
 .cc{background-image: url("./media/currency_converter.png");}
