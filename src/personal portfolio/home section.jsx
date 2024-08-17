@@ -1,7 +1,23 @@
 import {motion} from "framer-motion"
-
+import { useEffect, useState } from "react"
+import axios from 'axios'
 
 function HomePage(){
+    const [data, setdata] = useState()
+    const baseURL = 'https://my-json-data-qs8i.onrender.com/portfolio'
+
+    useEffect(()=>{
+        async function getDataFromApi(){
+            try {
+                const response = await axios.get(baseURL)
+                setdata(response.data)
+                console.log("succesfully fetched...")
+            } catch (error) {
+                console.log("error while fetching data")   
+            }
+        }
+        getDataFromApi()
+    }, [])
     return <>
     <div id = "1" className="container home-page">
         <div className = "home-page-bio">

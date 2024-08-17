@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;    
+    background-color: rgb(14, 14, 14);
+
 }
 body{
     background-color: rgb(14, 14, 14);
-    /* min-height: 100vh; */
 }
 :root{
     --normal-text-size: 15px;
