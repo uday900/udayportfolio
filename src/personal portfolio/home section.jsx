@@ -8,7 +8,7 @@ function HomePage(){
             <div className="bio-heading">
                 <h2>I'm 
                 </h2>
-                <h1>  Uday kiran</h1>
+                <h1>  Uday darla</h1>
             </div>
             <div
             
