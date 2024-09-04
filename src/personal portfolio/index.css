@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;    
-    background-color: rgb(14, 14, 14);
+    font-family: "Inter", sans-serif;    
+    font-style: normal;
 
 }
 body{
@@ -13,6 +14,12 @@ body{
     --normal-text-color: #d2c2c2;
     --left-right-margin: 0px 150px;
     --border-layout: 1px solid skyblue;
+}
+.edit-icon{
+    padding: 1%;
+    font-size: medium;
+    background: transparent;
+    color: white;
 }
 /* ..................................nav-bar........................................ */
 nav{  
@@ -39,9 +46,12 @@ nav ul a,li{
 }
 nav ul li:first-child{
     margin-right: auto;
-    font-size: 20px;
-    color: skyblue;
+    font-size: 25px;
     font-weight: bold;
+    background: linear-gradient(to right, #0099f7, #f11712);;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 nav ul li a:hover{
@@ -106,7 +116,7 @@ nav ul li a:active{
     display: inline;
 }
 .bio-content{
-    text-align: justify;
+    text-align: left;
 }
 .home-page h1{
     color: #FD1C03;
@@ -123,10 +133,10 @@ nav ul li a:active{
     color: skyblue;
 }
 .social-icons a :hover{
-    border: 2px solid skyblue;
     padding: 5px;
     border-radius: 50%;
     transform: translateY(-5px);
+    transition: 1s all;
 }
 .extra-info{
     display: flex;
@@ -136,8 +146,9 @@ nav ul li a:active{
 }
 .downloadcv{
     width: max-content;
+    text-decoration: none;
     border-radius: 20px;
-    padding: 10px;
+    padding: 10px 15px;
     outline: none;
     border: none;
     cursor: pointer;
@@ -151,8 +162,8 @@ nav ul li a:active{
     border: 1px solid skyblue;
     transition: 1s;
 }
+
 .profile-photo{
-    background-image: url("./media/profile1.jpg");
     width: 270px;
     height: 270px ;
     border-radius: 50%;
@@ -175,13 +186,15 @@ nav ul li a:active{
     gap: 100px;
     margin: var(--left-right-margin);
     padding-top: 50px;
+    font-size: var(--normal-text-size);
+    color: var(--normal-text-color);
 }
 .about-left{
     margin: 0px;
 }
 .about-photo{
-    margin-top: 0px;
     background-image: url(./media/Passphoto.jpg);
+    margin-top: 0px;
     height: 250px;
     width: 200px;
     background-size: cover;
@@ -190,17 +203,9 @@ nav ul li a:active{
     transition: 1.1s all;
 }
 .about-photo:hover{
-    box-shadow: 2px 2px 2px 2px rgba(79, 79, 79, 0), 2px 2px  skyblue ;
     transform: scale(1.1);
     cursor: pointer;
 }
-.about-content{
-    text-align: justify;
-    color: var(--normal-text-color);
-    width: fit-content;
-    flex-wrap: wrap;
-}
-
 .about-catagories{
     margin-top: 15px;
 }
@@ -257,6 +262,7 @@ nav ul li a:active{
     transform: translateY(-10px);
     cursor: pointer;
     opacity: 0.5;
+    transition: 1s all;
 }
 
 .skill-logo{
@@ -268,17 +274,7 @@ nav ul li a:active{
     overflow: hidden;
 
 }
-.logo-java{
-    background-image: url("./media/image.png");
-}
-.logo-python{background-image: url("./media/python_logo.jpg");}
-.logo-c{background-image: url("./media/c_logo.jpg");}
-.logo-react{background-image: url("./media/react.webp");}
-.logo-html{background-image: url("./media/html.png");}
-.logo-css{background-image: url("./media/css_logo.png");}
-.logo-javascript{background-image: url("./media/javascript.jpg");}
-.logo-excel{background-image: url("./media/excel.png");}
-.logo-sql{background-image: url("./media/sql_logo.png");}
+
 .skill-title{
     text-align: center;
     width: 50px;
@@ -352,14 +348,9 @@ nav ul li a:active{
     border-radius: 10px;
 }
 .projects-image:hover{
-    transform: translatex(2px);
-    box-shadow: 2px 2px 2px 2px rgb(39, 39, 39);
+    transform: scale(1.1,1.1);
+    transition: 1s all;
 }
-.ems{background-image: url("./media/employee_management_system.png");}
-/* .calucl{background-image: url("./media/cal.png");} */
-.todolists{background-image: url("./media/todolists.png");}
-.btc{background-image: url("./media/brain_tumor_classification.png");}
-.cc{background-image: url("./media/currency_converter.png");}
 
 .projects-content{
     width: 90%;
@@ -370,7 +361,6 @@ nav ul li a:active{
 .content-matter-para{
     margin: 0;
 }
-    
 .project-link{
    
     margin-top: 10px;

@@ -1,58 +1,37 @@
 import {motion} from "framer-motion"
 import { useEffect, useState } from "react"
 import axios from 'axios'
-
+import { data } from "../data"
 function HomePage(){
-    const [data, setdata] = useState()
-    const baseURL = 'https://my-json-data-qs8i.onrender.com/portfolio'
-
-    useEffect(()=>{
-        async function getDataFromApi(){
-            try {
-                const response = await axios.get(baseURL)
-                setdata(response.data)
-                console.log("succesfully fetched...")
-            } catch (error) {
-                console.log("error while fetching data")   
-            }
-        }
-        getDataFromApi()
-    }, [])
     return <>
-    <div id = "1" className="container home-page">
-        <div className = "home-page-bio">
-            <div className="bio-heading">
-                <h2>I'm 
-                </h2>
-                <h1>  Uday kiran</h1>
-            </div>
-            <div
-            
-            className="bio-content">
-                A recent graduate from R.V.R & J.C College of Engineering
-                with a strong foundation in full-stack development.
-                My technical skills have been honed through practical experience, 
-                including internships where I developed comprehensive web applications. 
-                I am passionate about leveraging my technical expertise to drive innovation 
-                and solve complex challenges in the tech industry.
-            </div>
-            <div 
-            className="extra-info">
-                <div className="social-icons">
-                    <a href="https://www.linkedin.com/in/darla-uday-kiran-18a450239" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/yourfacebookprofile" target="_blank"><i className="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/yourinstagramprofile" target="_blank"><i className="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/yourchannel" target="_blank"><i className="fa-brands fa-youtube"></i></a>
+        <div id = "1" className="container home-page">
+            <div className = "home-page-bio">
+                <div className="bio-heading">
+                    <h2>I'm </h2>
+                    <h1> { data.displayName }</h1>
                 </div>
-                <a href="./resume1.pdf" download className="downloadcv">
-                 Download CV</a>
-                
+                <div className="bio-content">
+                    { data.bio }
+                </div>
+                <div 
+                className="extra-info">
+                    <div className="social-icons">
+
+                        <a href= { data.socialLinks.linkedin} target="_blank"><i className="fa-brands fa-linkedin"></i></a>
+                        <a href= { data.socialLinks.facebook } target="_blank"><i className="fa-brands fa-facebook"></i></a>
+                        <a href= { data.socialLinks.instagram } target="_blank"><i className="fa-brands fa-instagram"></i></a>
+                        <a href= { data.socialLinks.github } target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href={data.resume} download className="downloadcv">
+                        Download CV
+                    </a>
+                    
+                </div>
             </div>
-        </div>
-        <div
-        className = "profile-photo"></div>
-    </div>
-    
-    
-    </>
+
+            <img src= { data.profileImage}
+            className="profile-photo" 
+            alt="profile-img" />
+            </div>
+        </> 
 }export default HomePage

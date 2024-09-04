@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { data } from "../data";
 
 function ProjectsPage() {
   return (
@@ -12,8 +13,46 @@ function ProjectsPage() {
         >
           Projects
         </motion.div>
-        {/* <div className="main-title">Projects</div> */}
-
+        
+          { data.projects.map((project)=>{
+            return <>
+            <div className="experience-block">
+              <img src={project.image} alt="img" className="projects-image" />
+              <div className="projects-content">
+                <h3> {project.name} </h3>
+                <div className="content-matter">
+                  <ul>
+                    { project.points.map((point)=>{
+                      return <li> { point}</li>
+                    })}
+                  </ul>
+                </div>
+                <div className="content-skills">
+                  { project.skills.map((skill)=>{
+                      return <span className="span">
+                          { skill}
+                      </span>
+                  })}
+              </div>
+              { project.link && <>
+              <div className="project-link">
+              project link{" "}
+              <a
+                target="_blank"
+                href={project.link}>
+              <i className="fa-solid fa-link"></i>
+              </a>
+              </div>
+              </>}
+              
+              
+              </div>
+              </div>
+            </>
+          })}
+      
+        
+        {/* 
         <div className="experience-block">
           <div className="projects-image ems"></div>
           <div className="projects-content">
@@ -213,7 +252,7 @@ function ProjectsPage() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -41,11 +41,7 @@ const PersonalPortfolio = () => {
                     >
                         <i className="fa-solid fa-bars"></i>
                     </li>
-                    <li>
-                        <button className="btn btn-default text-white">
-                            <i className="fa-solid fa-pen-to-square"></i>
-                        </button>
-                    </li>
+                
                 </ul>
 
                 {menuSymbol && (

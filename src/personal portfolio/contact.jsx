@@ -39,13 +39,6 @@ const ContactPage = () => {
         transition={{duration:0.9}}
         className="main-title">Get in Touch</motion.div>
 
-                    {/* <div
-                        
-                        className="main-title"
-                    >
-                        Get in Touch
-                    </div> */}
-
                     <h3
                         className="also-see-my-profiles"
                     >
@@ -140,9 +133,7 @@ const ContactPage = () => {
                     </div>
                 </div>
 
-                <div className="copyrights">
-                    <p>© copyrights portfolio Darla uday kiran 2024</p>
-                </div>
+                
             </div>
         </>
     );

@@ -13,9 +13,7 @@ const AboutPage = () => {
         <>
             <div className="container about-container" id="2">
 
-                <div 
-                    className="about-left"
-                >
+                <div className="about-left">
                     <div className="about-photo"></div>
                 </div>
 
@@ -25,8 +23,7 @@ const AboutPage = () => {
                 >
                     <h2>About me</h2>
                     <div className="about-content-matter">
-                        Seeking an opportunity with my professional ability in terms of Technical and Analytical skills in the field of computers
-                        and looking for long-term growth and success in reputed organization.
+                        I’m Uday Kiran, a recent Computer Science graduate with a passion for front-end development and a strong commitment to creating impactful web experiences. Throughout my studies, I’ve focused on mastering technologies like JavaScript and React.js, which I’ve applied in various hands-on projects. From developing dynamic web applications to refining user interfaces
                     </div>
                     <div className="about-catagories">
                         <div className="about-catagories-list">

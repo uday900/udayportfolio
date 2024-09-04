@@ -1,6 +1,7 @@
 // src/SkillsPage.js
 import React from 'react';
 import {motion} from "framer-motion"
+import { data } from '../data';
 
 const SkillsPage = () => {
   return <>
@@ -10,73 +11,20 @@ const SkillsPage = () => {
         initial = {{opacity: 0, y: -100}}
         transition={{duration:0.9}}
         className="main-title">Technologies</motion.div>
-        <div
-        whileInView={{opacity: 1, x: 0}}
-        initial = {{opacity: 0, x: -100}}
-        transition={{duration:0.9}}
-        className="skill-container">
-            <div className="skill-block">
-                    <div className="skill-logo logo-java"></div>
-                <div className="skill-title">
-                        Java    
+
+        <div className="skill-container">
+            { data.skills.map((skill)=>{
+                return <>
+                <div className="skill-block">
+                    <img src={skill.logo} alt="skill" 
+                    className="skill-logo" />
+                    <div className="skill-title">
+                        {skill.name}
+                    </div>
                 </div>
-            </div>
-        <div className="skill-block">
-            <div className="skill-logo logo-python">
-            </div>
-            <div className="skill-title">
-                    Python
-            </div>
-        </div>
-        <div className="skill-block">
-            <div className="skill-logo logo-c">
-            </div>
-            <div className="skill-title">
-                    C
-            </div>
-        </div>
-        <div className="skill-block">
-            <div className="skill-logo logo-html">
-            </div>
-            <div className="skill-title">
-                    Html
-            </div>
-        </div>
-        <div className="skill-block">
-            <div className="skill-logo logo-css">
-            </div>
-            <div className="skill-title">
-                    CSS
-            </div>
-        </div>
-        <div className="skill-block">
-            <div className="skill-logo logo-javascript">
-            </div>
-            <div className="skill-title">
-                    JavaScript
-            </div>
-        </div>
-        <div className="skill-block">
-            <div className="skill-logo logo-react">
-            </div>
-            <div className="skill-title">
-                    React.js
-            </div>
-        </div>
-        <div className="skill-block">
-            <div className="skill-logo logo-sql">
-            </div>
-            <div className="skill-title">
-                    SQL
-            </div>
-        </div>
-        <div className="skill-block">
-            <div className="skill-logo logo-excel">
-            </div>
-            <div className="skill-title">
-                    Excel
-            </div>
-        </div>
+                </>
+            })}
+            
         </div>
         
         
