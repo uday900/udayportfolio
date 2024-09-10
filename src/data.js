@@ -24,19 +24,6 @@ export const data = {
         facebook: "https://www.facebook.com/udaykiran.darla.3?mibextid=ZbWKwL",
         leetcode: "https://leetcode.com/u/uday080/"
     },
-
-
-
-    contact: {
-        mobile: "6301436515",
-        country: "India",
-        state: "Andhra Pradesh",
-        village: "Paluru",
-        city: "Kandukur",
-        district: "Nellor",
-        address: "2-28",
-        email: "udaykirandarla2002@gmail.com"
-    },
   
     projects : [
         {

@@ -55,13 +55,10 @@ nav ul li:first-child{
 }
 
 nav ul li a:hover{
-    color:  rgba(255, 255, 255, 0.5);
-    border: 1px solid skyblue;
+    color:  white;
     padding: 5px;
     border-radius: 5px;
-}
-nav ul li a:active{
-    background-image: radial-gradient(circle, skyblue, rgba(215, 18, 18, 0));
+    background-color: #0099f7;
 }
 
 /* ........... */
@@ -93,9 +90,6 @@ nav ul li a:active{
 
 .container{
     margin: var(--left-right-margin);
-    /* border: var(--border-layout); */
-    /* height: auto;
-    overflow: hidden; */
 }
 .home-page{
     color: var(--normal-text-color);
